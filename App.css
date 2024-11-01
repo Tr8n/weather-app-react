@@ -1,0 +1,82 @@
+/* Main container */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  background-color: blanchedalmond;
+  height: 100vh;
+  padding-top: 70px; /* Space for fixed search box */
+}
+
+/* Fixed Search Bar */
+.search-box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.search-bar {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Section Styling */
+.weather-section, .aqi-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: gray;
+  border-radius: 8px;
+  width: 80%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Blocks with Unique Background Colors */
+.location-block, .date-block, .temp-block, .wind-block, .humidity-block, .aqi-block, .pollutants-block {
+  width: 45%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.location-block {
+  background-color: #ad9a98; /* Red */
+}
+
+.date-block {
+  background-color: #707381; /* Blue */
+}
+
+.temp-block {
+  background-color: #c5baaa; /* Orange */
+}
+
+.wind-block {
+  background-color: #60706f; /* Teal */
+}
+
+.humidity-block {
+  background-color: #5b675b; /* Green */
+}
+
+.aqi-block {
+  background-color: #bdadd9; /* Purple */
+}
+
+.pollutants-block {
+  background-color: #66544d; /* Brown */
+}
+
+/* Typography for consistency */
+.location, .date, .temp, .feels-like, .weather-condition, .humidity {
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -1,0 +1,106 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #dfdede;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* AQI App Container */
+  .aqi-app {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    transition: background 0.5s ease;
+    position: relative;
+  }
+  
+  /* Search Box */
+  .search-box {
+    width: 100%;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+  }
+  
+  /* AQI Content */
+  .aqi-content {
+    text-align: left;
+    color: #fff;
+  }
+  
+  .location {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .aqi-box {
+    margin: 20px 0;
+  }
+  
+  .aqi {
+    font-size: 18px;
+  }
+  
+  .aqi-desc {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .pollutants div {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* AQI-based backgrounds */
+  .aqi-app.good {
+    background: linear-gradient(to right, #66bb6a, #81c784);
+  }
+  
+  .aqi-app.fair {
+    background: linear-gradient(to right, #fdd835, #fbc02d);
+  }
+  
+  .aqi-app.moderate {
+    background: linear-gradient(to right, #ff9800, #f57c00);
+  }
+  
+  .aqi-app.poor {
+    background: linear-gradient(to right, #e53935, #d32f2f);
+  }
+  
+  .aqi-app.very-poor {
+    background: linear-gradient(to right, #b71c1c, #d50000);
+  }
+  
+  .aqi-app.default-air {
+    background: linear-gradient(to right, #34495e, #2c3e50);
+  }
+  
